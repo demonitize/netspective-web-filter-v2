@@ -1,0 +1,156 @@
+body {
+	font-family: Arial, Helvetica, Serif, Verdana;
+	font-size: 12px;
+	margin: 0;
+	padding: 0;
+}
+input, textarea, select, button {
+    border: 1px solid #ccc;
+    outline: none;
+}
+input[type=button], button {
+    background-color: #ddd;
+    color: #121212;
+	font-size: 12px;
+}
+input, textarea {
+    padding: 2px 3px;
+}
+input[type=checkbox], input[type=radio] {
+    margin: 0 3px 0 0;
+    vertical-align: text-top;
+}
+fieldset {
+	background-color: #fbfbfb;
+	border-color: #bbb;
+	border-style: solid;
+	border-width: 1px;
+    margin: 0 0 5px;
+    padding: 5px 5px 3px;
+}
+fieldset dl {
+    display: table;
+	empty-cells: show;
+	table-layout: fixed;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+}
+fieldset dl>dt {
+    display: table-caption;
+    line-height: 20px;
+}
+fieldset dl>dd {
+    display: table-row;
+}
+fieldset dl>dd>label, fieldset dl>dd>div, fieldset dl>dd>span {
+    display: table-cell;
+    line-height: 20px;
+    vertical-align: middle;
+}
+fieldset dl>dd>label {
+    width: 100px;
+}
+fieldset dl>dd input[type=text], fieldset dl>dd input[type=search], fieldset dl>dd input[type=password], fieldset dl>dd input[type=email], fieldset dl>dd input[type=file], fieldset dl>dd textarea, fieldset dl>dd select, fieldset dl>dd button {
+    display: table-cell;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    height: 20px;
+    line-height: 16px;
+    margin-bottom: 2px;
+}
+fieldset dl>dd>input[type=text], fieldset dl>dd>input[type=search], fieldset dl>dd>input[type=password], fieldset dl>dd>input[type=email], fieldset dl>dd>input[type=file], fieldset dl>dd>textarea, fieldset dl>dd>select {
+    width: 100%;
+}
+fieldset dl>dd>div>input[type=text], fieldset dl>dd>div>input[type=search], fieldset dl>dd>div>input[type=password], fieldset dl>dd>div>input[type=email], fieldset dl>dd>div>input[type=file], fieldset dl>dd>div>textarea, fieldset dl>dd>div>select, fieldset dl>dd>div>button {
+    display: inline-block;
+}
+fieldset dl>dd>div>button {
+    margin-bottom: 0;
+    vertical-align: bottom;
+}
+div.buttons {
+    text-align: right;
+}
+div.buttons button {
+    height: 20px;
+	width: 120px;
+}
+
+/* options */
+body.options {
+	margin: 10px;
+}
+body.options .settings {
+    border: 1px solid #bbb;
+    width: 500px;
+}
+body.options .content {
+	padding: 5px;
+}
+body.options .header {
+	border-bottom: 3px solid #1976D2;
+	padding: 5px;
+}
+body.options .address button {
+	float: right;
+	margin-left: 5px;
+	width: 120px;
+}
+body.options .address dd>div>div {
+	margin-left: 5px;
+}
+body.options .address dd>div>div input {
+	width: 372px;
+}
+body.options dd>ul {
+	margin: 0;
+}
+body.options .configuration dd>div>div input {
+	width: 100%;
+}
+body.options dd>ul {
+	margin: 0;
+}
+
+
+/* popup */
+body.popup {
+	width: 320px;
+}
+body.popup .dialog {
+	border: 1px solid #bbb;
+}
+body.popup .dialog .header {
+	border-bottom: 3px solid #1976D2;
+	padding: 5px;
+	text-align: center;
+}
+body.popup .message {
+	font-size: 14px;
+	font-style: italic;
+    line-height: 20px;
+    padding: 5px 3px;
+	text-align: center;
+}
+body.popup fieldset {
+	background-color: transparent;
+	border-width: 1px 0;
+	padding: 0;
+}
+body.popup fieldset:last-child {
+	border-width: 1px 0 0;
+}
+body.popup fieldset dl>dd>label, body.popup fieldset dl>dd>div, body.popup fieldset dl>dd>span {
+    line-height: 16px;
+    padding: 3px 5px;
+}
+body.popup fieldset dl>dd>label {
+	font-weight: bold;
+    width: 10;
+}
+body.popup fieldset dl>dd>div {
+    text-align: right;
+}

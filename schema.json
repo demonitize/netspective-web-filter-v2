@@ -1,0 +1,27 @@
+{
+	"type": "object",
+	"properties": {
+		"Appliances": {
+			"type": "array",
+			"items": {
+				"type": "string",
+				"title": "Place your filter server URLs here.",
+				"description": "These are the servers that the extension connects to. The end user cannot change these"
+			}
+		},
+		"accountConfig":{
+			"type":"string",
+			"title":"Method of getting the user info",
+			"description":"Allowed Values: \"managed\"/\"policy\" || \"browser\" || \"enduser\"/\"enduser-config\" "
+		},
+		"Username":{
+			"type":"string",
+			"title":"The email address to use for a username"
+		},
+		"Userid":{
+			"type":"string",
+			"title":"The account ID to use for the user",
+			"description":"You can find a user's ID by clicking this thoughtfully placed link  https://developers.google.com/people/api/rest/v1/people/get"
+		}
+	}
+}

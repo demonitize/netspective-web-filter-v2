@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>NetSpective Webfilter Options</title>
+	<link rel="stylesheet" type="text/css" href="netspective.css">
+</head>
+
+<body class="options">
+	<div class="settings">
+		<div class="header"><img src="images/netspective_logo.png"></div>
+		<div id="content" class="content">
+			<fieldset class="configuration">
+				<dl>
+					<dd>
+						<label for="configuration">Configuration:</label>
+						<div>
+							<div><input type="text" id="configuration" disabled=true></div>
+						</div>
+					</dd>
+				</dl>
+			</fieldset>
+			<fieldset class="logging">
+				<dl>
+					<dd>
+						<label for="logLevel">Logging Level:</label>
+						<select id="logLevel">
+							<option value="INFO">INFO</option>
+							<option value="DEBUG">DEBUG</option>
+							<option value="TRACE">TRACE</option>
+						</select>
+					</dd>
+				</dl>
+			</fieldset>
+			<fieldset class="extras">
+				<dl>
+					<dt>
+						<input type="checkbox" id="stats_enabled">
+						<span>Enable extra stats</span>
+					</dt>
+				</dl>
+			</fieldset>
+			<fieldset class="managed_list">
+				<dl>
+					<dt>Managed Policy Appliances</dt>
+					<dd>
+						<ul id="managed">
+						</ul>
+					</dd>
+				</dl>
+			</fieldset>
+			<fieldset class="appliances_list">
+				<dl>
+					<dt>Appliances (managed policy takes precedence):</dt>
+					<dd>
+						<ul id="appliances">
+						</ul>
+					</dd>
+				</dl>
+			</fieldset>
+			<fieldset class="address">
+				<dl>
+					<dd>
+						<label for="address">Address:</label>
+						<div>
+							<div><input type="text" id="address_input"></div>
+							<button id="clear">Clear List</button>
+							<button id="remove">Remove Address</button>
+							<button id="add">Add Address</button>
+						</div>
+					</dd>
+				</dl>
+			</fieldset>
+			<fieldset class="address">
+				<dl>
+					<dd>
+						<div><input id="user_id" type="text" placeholder="User ID"></div>
+						<div><input id="username" type="text" placeholder="Username"></div>
+					</dd>
+				</dl>
+			</fieldset>
+			<div class="buttons">
+				<button id="save">Save</button>
+				<button id="reset">Restore default</button>
+			</div>
+		</div>
+	</div>
+	<script type="text/javascript" src="js/vendor.js"></script>
+	<script type="text/javascript" src="js/options.js"></script>
+</body>
+</html>
