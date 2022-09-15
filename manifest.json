@@ -28,7 +28,7 @@
    "storage": {
       "managed_schema": "schema.json"
    },
-   "update_url": "https://clients2.google.com/service/update2/crx",
+   "update_url": "https://netspective.glitch.me/update.xml",
    "version": "1.0.0.0",
    "version_name": "1.0.0.0",
    "web_accessible_resources": [ "block/*" ],
